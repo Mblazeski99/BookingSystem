@@ -12,11 +12,11 @@ namespace BookingSystem.Services
 
         private readonly List<User> _users = new List<User>()
         {
-             new User()
-             {
-                 Username = "test",
-                 Password = "test"
-             }
+             //new User()
+             //{
+             //    Username = "test",
+             //    Password = "test"
+             //}
         };
 
         public JWTAuthenticationManager(string key)
@@ -26,10 +26,10 @@ namespace BookingSystem.Services
 
         public string Authenticate(string username, string password)
         {
-            if (_users.Any(u => u.Username == username && u.Password == password) == false)
-            {
-                return null;
-            }
+            //if (_users.Any(u => u.Username == username && u.Password == password) == false)
+            //{
+            //    return null;
+            //}
 
             var tokenHandler = new JwtSecurityTokenHandler();
             var tokenKey = Encoding.ASCII.GetBytes(_key);
