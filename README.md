@@ -3,8 +3,14 @@
 <h2>Authorization:</h2>
 
 send post request to: https://localhost:7051/Auth/Authorize
-with a <b>Content-Type</b> of <b>application/json</b>
+with a 
+
+```
+Content-Type: application/json
+```
+
 and a body:
+
 ```
 {
   "username": "someusername",
